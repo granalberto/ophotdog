@@ -1,0 +1,14 @@
+#!/usr/bin/env perl
+
+use v5.10;
+use warnings;
+use strict;
+use lib 'lib';
+use opdog;
+
+my $obj = opdog->new;
+
+for ($obj->get_units) {
+    say $_;
+}
+

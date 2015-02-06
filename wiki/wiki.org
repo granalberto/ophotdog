@@ -1,0 +1,5 @@
+* Carrito
+** Mantenimiento
+*** Diario
+    El carrito debe ser limpiado con los productos adecuados en las
+    diferentes áreas.

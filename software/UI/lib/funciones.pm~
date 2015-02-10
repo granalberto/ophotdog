@@ -1,7 +1,0 @@
-
-
-
-sub adios {
-    say 'Goodbye!';
-    exit 0;
-}

@@ -1,0 +1,25 @@
+% layout 'default';
+% title 'OpHotDog';
+
+<div style="text-align: center"><h1><%= $msg %></h1></div>
+
+<div style="text-align: center"><img src="img/ophotdog.png" width="300" alt="Logo" /></div><br />
+<table>
+<tr>
+<td><a href="<%= url_for '/unidades' %>">Unidades</a></td>
+<td><a href="<%= url_for '/insumos' %>">Insumos</a></td>
+</tr>
+<tr>
+<td><a href="<%= url_for '/prodn' %>">Productos</a></td>
+<td><a href="<%= url_for '/prodi' %>">Productos Intermedios</a></td>
+</tr>
+<tr>
+<td><a href="<%= url_for '/prodf' %>">Productos Finales</a></td>
+<td><a href="<%= url_for '/rendimiento' %>">Rendimiento</a></td>
+</tr>
+<tr><div style="text-align: center"></div>
+<td><a href="<%= url_for '/compras' %>">Compras</a></td>
+<td><a href="<%= url_for '/ventas' %>">Ventas</a></td>
+</tr>
+</table>
+

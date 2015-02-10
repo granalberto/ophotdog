@@ -1,0 +1,25 @@
+% layout 'default';
+% title 'OpHotDog';
+
+<div style="text-align: center"><h1><%= $msg  %></h1></div>
+
+<div style="text-align: center"><img src="img/ophotdog.png" width="300" alt="Logo" /></div><br />
+
+
+<table align="center" valign="center">
+  <th>ARTÍCULO</th>
+  <th>MEDIDA</th>
+  <th>STOCK</th>
+
+  %for (@{$list}) {
+  <tr>
+    <td><%= $_->{articulo} %></td>
+    <td><%= $_->{medida} %></td>
+    <td><%= $_->{stock} %></td>
+  </tr>
+  %}
+</table>
+<br/>
+<a href="<%= url_for '/' %>">Inicio</a>
+
+

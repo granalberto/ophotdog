@@ -1,4 +1,4 @@
-package MyApp::Controller::Prodi;
+package OpHotdog::Controller::Prodf;
 use Mojo::Base 'Mojolicious::Controller';
 
 use Mojo::Pg;
@@ -12,11 +12,12 @@ my $db = $pg->db;
 sub show {
     my $self = shift;
 
-    my $results = $db->query('select  prod_n.t as nombre from prod_n, prod_i where (prod_i.prod_n_id=prod_n.id)');
+    my $results = $db->query('select  prod_n.t as producto 
+ from prod_n, prod_t where (prod_t.prod_n_id = prod_n.id)');
     
     $self->stash(list => $results->hashes);
     
-    $self->render(msg => 'Productos Intermedios');
+    $self->render(msg => 'Productos Terminados');
 }
 
 1;

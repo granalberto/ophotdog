@@ -1,4 +1,4 @@
-package MyApp::Controller::Units;
+package OpHotdog::Controller::Units;
 use Mojo::Base 'Mojolicious::Controller';
 
 use Mojo::Pg;

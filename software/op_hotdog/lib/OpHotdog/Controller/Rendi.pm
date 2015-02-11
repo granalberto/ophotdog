@@ -1,4 +1,4 @@
-package MyApp::Controller::Rendi;
+package OpHotdog::Controller::Rendi;
 use Mojo::Base 'Mojolicious::Controller';
 
 use Mojo::Pg;

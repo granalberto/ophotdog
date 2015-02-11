@@ -1,4 +1,4 @@
-package MyApp::Controller::Insumos;
+package OpHotdog::Controller::Insumos;
 use Mojo::Base 'Mojolicious::Controller';
 
 use Mojo::Pg;
